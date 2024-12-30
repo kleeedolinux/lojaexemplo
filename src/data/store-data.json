@@ -1,0 +1,249 @@
+{
+  "storeInfo": {
+    "name": "Loja Exemplo",
+    "description": "Sua loja online completa",
+    "phone": "(11) 1234-5678",
+    "email": "contato@lojaexemplo.com.br",
+    "address": "Rua Exemplo, 123 - São Paulo, SP",
+    "socialMedia": {
+      "instagram": "https://instagram.com/lojaexemplo",
+      "facebook": "https://facebook.com/lojaexemplo",
+      "twitter": "https://twitter.com/lojaexemplo"
+    }
+  },
+  "homepage": {
+    "hero": {
+      "title": "Descubra seu Estilo Único",
+      "subtitle": "Explore nossa coleção exclusiva de produtos selecionados especialmente para você",
+      "cta": {
+        "primary": {
+          "text": "Explorar Produtos",
+          "link": "/produtos"
+        },
+        "secondary": {
+          "text": "Ver Coleção",
+          "link": "/colecao"
+        }
+      },
+      "stats": [
+        {
+          "value": "50k+",
+          "label": "Clientes Felizes"
+        },
+        {
+          "value": "100+",
+          "label": "Marcas Premium"
+        },
+        {
+          "value": "24/7",
+          "label": "Suporte"
+        }
+      ]
+    },
+    "featuredProducts": ["1", "2", "3", "4"],
+    "featuredCategories": ["calcados", "roupas", "eletronicos"]
+  },
+  "categories": [
+    {
+      "id": "calcados",
+      "name": "Calçados",
+      "description": "Tênis, sapatos e sandálias para todos os estilos",
+      "image": "/categories/calcados.png",
+      "featured": true,
+      "slug": "calcados"
+    },
+    {
+      "id": "roupas",
+      "name": "Roupas",
+      "description": "Moda masculina e feminina com estilo e qualidade",
+      "image": "/categories/roupas.png",
+      "featured": true,
+      "slug": "roupas"
+    },
+    {
+      "id": "eletronicos",
+      "name": "Eletrônicos",
+      "description": "Gadgets e acessórios tecnológicos",
+      "image": "/categories/eletronicos.png",
+      "featured": true,
+      "slug": "eletronicos"
+    },
+    {
+      "id": "acessorios",
+      "name": "Acessórios",
+      "description": "Complementos para seu visual",
+      "image": "/categories/acessorios.png",
+      "featured": false,
+      "slug": "acessorios"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "Tênis Esportivo Premium",
+      "description": "Tênis esportivo de alta performance com tecnologia de amortecimento avançada",
+      "shortDescription": "O tênis perfeito para sua prática esportiva",
+      "price": 299.99,
+      "image": "/products/product1.png",
+      "images": [
+        "/products/product1.png",
+        "/products/product1-2.png",
+        "/products/product1-3.png"
+      ],
+      "category": "calcados",
+      "rating": 5,
+      "inStock": true,
+      "featured": true,
+      "isOffer": true,
+      "offerPrice": 249.99,
+      "offerEndDate": "2024-01-30",
+      "tags": ["esporte", "premium", "conforto"],
+      "specifications": {
+        "material": "Mesh respirável",
+        "sola": "Borracha antiderrapante",
+        "cores": ["Preto", "Branco", "Azul"]
+      },
+      "slug": "tenis-esportivo-premium"
+    },
+    {
+      "id": "2",
+      "name": "Camisa Social Slim",
+      "description": "Camisa social slim fit em algodão egípcio",
+      "shortDescription": "Elegância e conforto em uma peça única",
+      "price": 199.99,
+      "image": "/products/product2.png",
+      "images": [
+        "/products/product2.png",
+        "/products/product2-2.png",
+        "/products/product2-3.png"
+      ],
+      "category": "roupas",
+      "rating": 4,
+      "inStock": true,
+      "featured": true,
+      "isOffer": false,
+      "tags": ["social", "slim", "elegante"],
+      "specifications": {
+        "material": "100% Algodão Egípcio",
+        "fit": "Slim",
+        "cores": ["Branco", "Azul Claro", "Rosa"]
+      },
+      "slug": "camisa-social-slim"
+    },
+    {
+      "id": "3",
+      "name": "Smartwatch Pro",
+      "description": "Smartwatch com monitor cardíaco e GPS integrado",
+      "shortDescription": "Seu assistente pessoal no pulso",
+      "price": 899.99,
+      "image": "/products/product3.png",
+      "images": [
+        "/products/product3.png",
+        "/products/product3-2.png",
+        "/products/product3-3.png"
+      ],
+      "category": "eletronicos",
+      "rating": 5,
+      "inStock": true,
+      "featured": true,
+      "isOffer": true,
+      "offerPrice": 699.99,
+      "offerEndDate": "2024-01-30",
+      "tags": ["tecnologia", "esporte", "saúde"],
+      "specifications": {
+        "bateria": "Até 5 dias",
+        "tela": "AMOLED 1.4\"",
+        "resistência": "5ATM"
+      },
+      "slug": "smartwatch-pro"
+    }
+  ],
+  "offers": {
+    "active": true,
+    "banner": {
+      "title": "Ofertas Imperdíveis",
+      "subtitle": "Aproveite nossos melhores preços em produtos selecionados",
+      "image": "/banners/offers.png"
+    },
+    "featuredOffers": ["1", "3"],
+    "offerBadge": {
+      "text": "Oferta",
+      "backgroundColor": "primary"
+    }
+  },
+  "newArrivals": {
+    "active": true,
+    "banner": {
+      "title": "Novidades",
+      "subtitle": "Descubra os últimos lançamentos da nossa loja",
+      "image": "/banners/new-arrivals.png"
+    },
+    "featuredNewArrivals": ["1", "2", "3"],
+    "newArrivalBadge": {
+      "text": "Novo",
+      "backgroundColor": "primary"
+    }
+  },
+  "ui": {
+    "navigation": [
+      {
+        "name": "Home",
+        "path": "/"
+      },
+      {
+        "name": "Produtos",
+        "path": "/produtos"
+      },
+      {
+        "name": "Categorias",
+        "path": "/categorias"
+      },
+      {
+        "name": "Novidades",
+        "path": "/novidades"
+      },
+      {
+        "name": "Ofertas",
+        "path": "/ofertas"
+      }
+    ],
+    "footer": {
+      "sections": [
+        {
+          "title": "Sobre Nós",
+          "links": [
+            {
+              "name": "Nossa História",
+              "path": "/sobre"
+            },
+            {
+              "name": "Trabalhe Conosco",
+              "path": "/trabalhe-conosco"
+            },
+            {
+              "name": "Sustentabilidade",
+              "path": "/sustentabilidade"
+            }
+          ]
+        },
+        {
+          "title": "Ajuda",
+          "links": [
+            {
+              "name": "FAQ",
+              "path": "/faq"
+            },
+            {
+              "name": "Política de Entrega",
+              "path": "/entrega"
+            },
+            {
+              "name": "Trocas e Devoluções",
+              "path": "/devolucao"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

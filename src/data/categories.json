@@ -1,0 +1,32 @@
+{
+  "categories": [
+    {
+      "id": "calcados",
+      "name": "Calçados",
+      "description": "Tênis, sapatos e sandálias para todos os estilos",
+      "image": "/categories/calcados.png",
+      "featured": true
+    },
+    {
+      "id": "roupas",
+      "name": "Roupas",
+      "description": "Moda masculina e feminina com estilo e qualidade",
+      "image": "/categories/roupas.png",
+      "featured": true
+    },
+    {
+      "id": "eletronicos",
+      "name": "Eletrônicos",
+      "description": "Gadgets e acessórios tecnológicos",
+      "image": "/categories/eletronicos.png",
+      "featured": true
+    },
+    {
+      "id": "acessorios",
+      "name": "Acessórios",
+      "description": "Complementos para seu visual",
+      "image": "/categories/acessorios.png",
+      "featured": false
+    }
+  ]
+}

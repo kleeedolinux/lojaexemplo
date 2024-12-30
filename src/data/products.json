@@ -1,0 +1,57 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Tênis Esportivo Premium",
+      "description": "Tênis esportivo de alta performance com tecnologia de amortecimento avançada",
+      "price": 299.99,
+      "image": "/products/product1.png",
+      "category": "calcados",
+      "rating": 5,
+      "inStock": true,
+      "isOffer": true,
+      "offerPrice": 249.99,
+      "tags": ["esporte", "premium", "conforto"],
+      "specifications": {
+        "material": "Mesh respirável",
+        "sola": "Borracha antiderrapante",
+        "cores": ["Preto", "Branco", "Azul"]
+      }
+    },
+    {
+      "id": "2",
+      "name": "Camisa Social Slim",
+      "description": "Camisa social slim fit em algodão egípcio",
+      "price": 199.99,
+      "image": "/products/product2.png",
+      "category": "roupas",
+      "rating": 4,
+      "inStock": true,
+      "isOffer": false,
+      "tags": ["social", "slim", "elegante"],
+      "specifications": {
+        "material": "100% Algodão Egípcio",
+        "fit": "Slim",
+        "cores": ["Branco", "Azul Claro", "Rosa"]
+      }
+    },
+    {
+      "id": "3",
+      "name": "Smartwatch Pro",
+      "description": "Smartwatch com monitor cardíaco e GPS integrado",
+      "price": 899.99,
+      "image": "/products/product3.png",
+      "category": "eletronicos",
+      "rating": 5,
+      "inStock": true,
+      "isOffer": true,
+      "offerPrice": 699.99,
+      "tags": ["tecnologia", "esporte", "saúde"],
+      "specifications": {
+        "bateria": "Até 5 dias",
+        "tela": "AMOLED 1.4\"",
+        "resistência": "5ATM"
+      }
+    }
+  ]
+}
