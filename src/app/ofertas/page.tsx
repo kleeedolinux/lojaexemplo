@@ -10,7 +10,8 @@ export default function OffersPage() {
   const offers = getOfferProducts();
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="container mx-auto px-4 py-8">
+      <h1 className="text-3xl font-bold mb-8">Ofertas</h1>
       {/* Hero Section */}
       <section className="relative py-20 overflow-hidden bg-gradient-to-r from-blue-950 to-black">
         <motion.div

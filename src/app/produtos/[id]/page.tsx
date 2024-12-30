@@ -1,18 +1,18 @@
 import { getProductById, getRelatedProducts } from "@/lib/data";
 import ProductDetails from "./ProductDetails";
 
-export async function generateMetadata({ params }: { params: { id: string } }) {
-  const product = await Promise.resolve(getProductById(params.id));
-  
-  return {
-    title: product ? `${product.name} - Loja Exemplo` : "Produto não encontrado",
-    description: product?.description || "Produto não encontrado em nossa loja",
-  };
+type Props = {
+  params: Promise<{ id: string }>;
 }
 
-export default async function ProductPage({ params }: { params: { id: string } }) {
-  const product = await Promise.resolve(getProductById(params.id));
-  const relatedProducts = await Promise.resolve(getRelatedProducts(params.id));
+export default async function ProductPage(props: Props) {
+  const { id } = await props.params;
+  const product = await getProductById(id);
+  const relatedProducts = await getRelatedProducts(id);
+
+  if (!product) {
+    return <div>Produto não encontrado</div>;
+  }
 
   return <ProductDetails product={product} relatedProducts={relatedProducts} />;
 }

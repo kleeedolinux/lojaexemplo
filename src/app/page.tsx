@@ -7,39 +7,7 @@ import { ArrowRight, Star, ShoppingBag, Truck, Shield } from "lucide-react";
 import { useRef } from "react";
 import { getFeaturedProductsData, getHomepageData } from "@/lib/data";
 
-const featuredProducts = getFeaturedProductsData();
-
-const ShapesBackground = () => {
-  return (
-    <div className="absolute inset-0 overflow-hidden">
-      {[...Array(20)].map((_, i) => (
-        <motion.div
-          key={i}
-          className="absolute rounded-full bg-primary/10"
-          style={{
-            width: Math.random() * 300 + 50,
-            height: Math.random() * 300 + 50,
-            left: `${Math.random() * 100}%`,
-            top: `${Math.random() * 100}%`,
-          }}
-          initial={{ scale: 0, rotate: 0 }}
-          animate={{
-            scale: [1, 1.2, 1],
-            rotate: [0, 180, 360],
-            opacity: [0.1, 0.2, 0.1],
-          }}
-          transition={{
-            duration: Math.random() * 10 + 10,
-            repeat: Infinity,
-            ease: "linear",
-          }}
-        />
-      ))}
-    </div>
-  );
-};
-
-export default function Home() {
+export default function HomePage() {
   const targetRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: targetRef,
@@ -48,9 +16,9 @@ export default function Home() {
 
   const opacity = useTransform(scrollYProgress, [0, 1], [1, 0]);
   const scale = useTransform(scrollYProgress, [0, 1], [1, 0.8]);
-  const y = useTransform(scrollYProgress, [0, 1], [0, 100]);
 
   const homepageData = getHomepageData();
+  const featuredProducts = getFeaturedProductsData();
 
   return (
     <div className="flex flex-col min-h-screen">
@@ -63,7 +31,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-r from-blue-950/80 to-black/80 backdrop-blur-sm" />
         
         <motion.div 
-          style={{ opacity, scale, y }}
+          style={{ opacity, scale }}
           className="relative container mx-auto px-4 h-full flex flex-col md:flex-row items-center justify-between py-20"
         >
           {/* Left Content */}
@@ -160,7 +128,7 @@ export default function Home() {
             >
               <div className="relative w-full h-full rounded-2xl overflow-hidden shadow-2xl">
                 <Image
-                  src="/products/product1.jpg"
+                  src="/products/product1.png"
                   alt="Featured Product"
                   fill
                   className="object-cover"
@@ -181,7 +149,7 @@ export default function Home() {
             >
               <div className="relative w-full h-full rounded-2xl overflow-hidden shadow-2xl">
                 <Image
-                  src="/products/product2.jpg"
+                  src="/products/product2.png"
                   alt="Featured Product"
                   fill
                   className="object-cover"
@@ -364,3 +332,33 @@ export default function Home() {
     </div>
   );
 }
+
+const ShapesBackground = () => {
+  return (
+    <div className="absolute inset-0 overflow-hidden">
+      {[...Array(20)].map((_, i) => (
+        <motion.div
+          key={i}
+          className="absolute rounded-full bg-primary/10"
+          style={{
+            width: Math.random() * 300 + 50,
+            height: Math.random() * 300 + 50,
+            left: `${Math.random() * 100}%`,
+            top: `${Math.random() * 100}%`,
+          }}
+          initial={{ scale: 0, rotate: 0 }}
+          animate={{
+            scale: [1, 1.2, 1],
+            rotate: [0, 180, 360],
+            opacity: [0.1, 0.2, 0.1],
+          }}
+          transition={{
+            duration: Math.random() * 10 + 10,
+            repeat: Infinity,
+            ease: "linear",
+          }}
+        />
+      ))}
+    </div>
+  );
+};
